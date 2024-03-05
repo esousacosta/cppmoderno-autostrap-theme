@@ -49,3 +49,21 @@ function cppmoderno_styles() {
 }
 
 // add_action("wp_enqueue_scripts", "cppmoderno_styles");
+
+function add_additional_class_li($classes, $currItem, $args) {
+	if (isset($args->add_li_class)) {
+		// syntax to add elements to the array
+		$classes[] = $args->add_li_class;
+	}
+	return $classes;
+}
+
+function add_menu_link_class($atts, $menuItem, $args) {
+	if (isset($args->add_link_class)) {
+		$atts['class'] = $args->add_link_class;
+	}
+	return $atts;
+}
+
+add_filter('nav_menu_css_class', 'add_additional_class_li', 1, 3);
+add_filter('nav_menu_link_attributes', 'add_menu_link_class', 1, 3);

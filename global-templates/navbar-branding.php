@@ -68,7 +68,8 @@ if ( ! has_custom_logo() ) { ?>
 				'menu' => 'Navigation bar',
 				'menu_id'        => 'primary-menu',
 				'menu_class' => 'navbar-nav menu',
-
+				'add_li_class' => 'nav-item',
+				'add_link_class' => 'nav-link'
 			)
 		);
 		?>

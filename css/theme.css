@@ -15401,4 +15401,24 @@ body {
   text-decoration: none;
 }
 
+.site-main .left-side-hero {
+  align-self: flex-start;
+}
+.site-main .call-to-learn-card .call-to-learn-wrapper {
+  gap: 1.5em;
+  display: flex;
+  padding: 0;
+}
+.site-main .call-to-learn-card h2, .site-main .call-to-learn-card .h2 {
+  font-weight: 600;
+}
+.site-main .call-to-learn-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.site-main .call-to-learn-card a img {
+  height: 30px;
+}
+
 /*# sourceMappingURL=theme.css.map */

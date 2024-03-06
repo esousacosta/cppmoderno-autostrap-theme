@@ -50,3 +50,33 @@ body {
         text-decoration: none;
     }
 }
+
+.site-main {
+    .left-side-hero {
+        align-self: flex-start;
+    }
+
+    .call-to-learn-card {
+
+        .call-to-learn-wrapper {
+            gap: 1.5em;
+            display: flex;
+            padding: 0;
+        }
+
+        h2 {
+            font-weight: 600;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                // width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

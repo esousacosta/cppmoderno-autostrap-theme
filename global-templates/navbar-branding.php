@@ -58,8 +58,6 @@ if ( ! has_custom_logo() ) { ?>
 	<nav id="site-navigation" class="navbar navbar-expand-lg main-navigation">
 		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cppmoderno' ); ?></button> -->
 		<?php
-		// Need to add the nav-item class to the lis,
-		// and the nav-link class to the a tags
 		wp_nav_menu(
 			array(
 				'theme_location' => 'menu-1',
@@ -72,6 +70,7 @@ if ( ! has_custom_logo() ) { ?>
 				'add_link_class' => 'nav-link'
 			)
 		);
+		get_template_part('/parts/dropdown');
 		?>
 	</nav><!-- #site-navigation -->
 <?php 

@@ -14720,12 +14720,7 @@ body {
 }
 
 .site-header {
-  display: -ms-flexbox;
-  display: flex;
-}
-.site-header .navbar {
   width: 100%;
-  font-size: 2em;
 }
 
 .site-branding {
@@ -14733,6 +14728,16 @@ body {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+}
+.site-branding .custom-logo a {
+  display: block;
+}
+.site-branding .custom-logo img {
+  max-height: 100px;
+  width: auto;
+}
+.site-branding .site-title {
+  font-family: Roboto, sans-serif;
 }
 .site-branding .home-link {
   color: #000000;

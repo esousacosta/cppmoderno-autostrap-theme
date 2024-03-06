@@ -15,6 +15,10 @@ body {
     display: flex;
     align-items: center;
 
+    p {
+        margin-bottom: 0;
+    }
+
     .custom-logo {
         a {
             display: block;
@@ -27,7 +31,18 @@ body {
     }
 
     .site-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
         font-family: Roboto, sans-serif;
+    }
+
+    .site-description {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.4;
     }
 
     .home-link {

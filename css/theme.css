@@ -15365,6 +15365,9 @@ body {
 .site-header {
   padding: 0;
 }
+.site-header .cppmoderno-search-button {
+  margin-left: 0px;
+}
 
 .site-branding {
   display: flex;

@@ -55,6 +55,10 @@ if ( ! has_custom_logo() ) { ?>
 		<?php endif; ?>
 	</div><!-- .site-branding -->
 
+	<?php
+	get_template_part('/parts/search-form');
+	?>
+
 	<nav id="site-navigation" class="navbar navbar-expand-lg main-navigation">
 		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cppmoderno' ); ?></button> -->
 		<?php
@@ -63,6 +67,7 @@ if ( ! has_custom_logo() ) { ?>
 				'theme_location' => 'menu-1',
 				'conatiner' => 'div',
 				'container_class' => 'collapse navbar-collapse',
+				'container_id' => 'navbarNavDropdown',
 				'menu' => 'Navigation bar',
 				'menu_id'        => 'primary-menu',
 				'menu_class' => 'navbar-nav menu',

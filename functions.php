@@ -41,11 +41,11 @@ if ( class_exists( 'Jetpack' ) ) {
 
 // Include popper before bootstrap, for dropdown
 // dependencies to work properly.
-function add_popper_js() {
-	wp_enqueue_script("popper-js", "https://unpkg.com/@popperjs/core@2/dist/umd/popper.js", array());
-}
+// function add_popper_js() {
+// 	wp_enqueue_script("popper-js", "https://unpkg.com/@popperjs/core@2/dist/umd/popper.js", array());
+// }
 
-add_action('wp_enqueue_scripts', 'add_popper_js', 3);
+// add_action('wp_enqueue_scripts', 'add_popper_js', 3);
 
 // Include files.
 foreach ( $understrap_includes as $file ) {

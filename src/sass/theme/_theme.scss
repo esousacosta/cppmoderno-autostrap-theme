@@ -53,7 +53,14 @@ body {
 
 .site-main {
     .left-side-hero {
-        align-self: flex-start;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h1 {
+            font-size: $cppmoderno-text-huge;
+        }
     }
 
     .call-to-learn-card {
@@ -72,6 +79,7 @@ body {
             display: inline-flex;
             align-items: center;
             gap: 5px;
+            color: rgb(33, 37, 41);
 
             img {
                 // width: 30px;

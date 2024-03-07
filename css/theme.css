@@ -666,7 +666,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 .row {
@@ -12222,7 +12222,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
   body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 body.understrap-no-sidebar .alignwide,
@@ -15402,7 +15402,13 @@ body {
 }
 
 .site-main .left-side-hero {
-  align-self: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.site-main .left-side-hero h1, .site-main .left-side-hero .h1 {
+  font-size: clamp(2.25rem, 1.4688rem + 2.5vw, 3.5rem);
 }
 .site-main .call-to-learn-card .call-to-learn-wrapper {
   gap: 1.5em;
@@ -15416,6 +15422,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  color: rgb(33, 37, 41);
 }
 .site-main .call-to-learn-card a img {
   height: 30px;

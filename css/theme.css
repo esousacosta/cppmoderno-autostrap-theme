@@ -15358,6 +15358,13 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+:root {
+  --global-palette-highlight: #1b41c7;
+  --global-palette-highlight-alt: #1f3278;
+  --global-palette-black: rgba(36, 40, 57);
+  --global-palette-transparent-gray: rgba(37, 38, 94, 0.8);
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -15422,10 +15429,29 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: rgb(33, 37, 41);
+  color: var(--global-palette-black);
 }
 .site-main .call-to-learn-card a img {
   height: 30px;
+}
+.site-main .entry-taxonomies {
+  font-size: 75%;
+}
+.site-main .entry-taxonomies a {
+  color: var(--global-palette-highlight);
+  transition: all 0.1s linear;
+}
+.site-main .entry-taxonomies a :hover, .site-main .entry-taxonomies a :active, .site-main .entry-taxonomies a :focus {
+  color: var(--global-palette-highlight-alt);
+}
+.site-main .entry-title a {
+  font-weight: 700;
+  font-size: var(--global-kb-font-size-md, 1.25rem);
+  text-decoration: none;
+  color: var(--global-palette3);
+}
+.site-main .entry-meta * {
+  color: var(--global-palette-transparent-gray);
 }
 
 /*# sourceMappingURL=theme.css.map */

@@ -14715,12 +14715,22 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+:root {
+  --global-palette-highlight: #1b41c7;
+  --global-palette-highlight-alt: #1f3278;
+  --global-palette-black: rgba(36, 40, 57);
+  --global-palette-transparent-gray: rgba(37, 38, 94, 0.8);
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .site-header {
-  width: 100%;
+  padding: 0;
+}
+.site-header .cppmoderno-search-button {
+  margin-left: 0px;
 }
 
 .site-branding {
@@ -14728,6 +14738,9 @@ body {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+}
+.site-branding p {
+  margin-bottom: 0;
 }
 .site-branding .custom-logo a {
   display: block;
@@ -14737,11 +14750,70 @@ body {
   width: auto;
 }
 .site-branding .site-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
   font-family: Roboto, sans-serif;
+}
+.site-branding .site-description {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
 }
 .site-branding .home-link {
   color: #000000;
   text-decoration: none;
+}
+
+.site-main .left-side-hero {
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.site-main .left-side-hero h1 {
+  font-size: clamp(2.25rem, 1.4688rem + 2.5vw, 3.5rem);
+}
+.site-main .call-to-learn-card .call-to-learn-wrapper {
+  gap: 1.5em;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.site-main .call-to-learn-card h2 {
+  font-weight: 600;
+}
+.site-main .call-to-learn-card a {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--global-palette-black);
+}
+.site-main .call-to-learn-card a img {
+  height: 30px;
+}
+.site-main .entry-taxonomies {
+  font-size: 75%;
+}
+.site-main .entry-taxonomies a {
+  color: var(--global-palette-highlight);
+  transition: all 0.1s linear;
+}
+.site-main .entry-taxonomies a :hover, .site-main .entry-taxonomies a :active, .site-main .entry-taxonomies a :focus {
+  color: var(--global-palette-highlight-alt);
+}
+.site-main .entry-title a {
+  font-weight: 700;
+  font-size: var(--global-kb-font-size-md, 1.25rem);
+  text-decoration: none;
+  color: var(--global-palette3);
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */

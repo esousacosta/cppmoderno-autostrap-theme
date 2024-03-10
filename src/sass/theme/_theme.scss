@@ -15,7 +15,7 @@ body {
 
     #main-nav {
         background: linear-gradient(180deg, rgba(31, 50, 120, 0.57) 0%, #fff 100%) !important;
-        
+
         a {
             color: var(--global-palette-black-nav);
         }
@@ -144,6 +144,10 @@ body {
     }
 }
 
-.site-footer {
-    background: linear-gradient(180deg,#f5f5f8 0%,rgba(31,50,120,0.57) 100%);
+#wrapper-footer {
+    background: linear-gradient(180deg, #f5f5f8 0%, rgba(31, 50, 120, 0.57) 100%);
+
+    // .site-footer {
+    //     background: linear-gradient(180deg, #f5f5f8 0%, rgba(31, 50, 120, 0.57) 100%);
+    // }
 }

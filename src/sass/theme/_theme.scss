@@ -3,6 +3,7 @@
     --global-palette-highlight: #1b41c7;
     --global-palette-highlight-alt: #1f3278;
     --global-palette-black: rgba(36, 40, 57);
+    --global-palette-black-nav: #040404;
     --global-palette-transparent-gray: rgba(37, 38, 94, 0.8);
 }
 
@@ -11,6 +12,15 @@ body {
 }
 
 .site-header {
+
+    #main-nav {
+        background: linear-gradient(180deg, rgba(31, 50, 120, 0.57) 0%, #fff 100%) !important;
+        
+        a {
+            color: var(--global-palette-black-nav);
+        }
+    }
+
     padding: 0;
 
     .cppmoderno-search-button {
@@ -73,6 +83,13 @@ body {
 
     .call-to-learn-card {
 
+        border: 0px;
+        padding-left: 0;
+
+        .card-body {
+            padding-left: 0;
+        }
+
         .call-to-learn-wrapper {
             gap: 1.5em;
             display: flex;
@@ -125,4 +142,8 @@ body {
             font-weight: 500;
         }
     }
+}
+
+.site-footer {
+    background: linear-gradient(180deg,#f5f5f8 0%,rgba(31,50,120,0.57) 100%);
 }

@@ -15362,6 +15362,7 @@ figure.woocommerce-product-gallery__wrapper {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;
   --global-palette-black: rgba(36, 40, 57);
+  --global-palette-black-nav: #040404;
   --global-palette-transparent-gray: rgba(37, 38, 94, 0.8);
 }
 
@@ -15371,6 +15372,12 @@ body {
 
 .site-header {
   padding: 0;
+}
+.site-header #main-nav {
+  background: linear-gradient(180deg, rgba(31, 50, 120, 0.57) 0%, #fff 100%) !important;
+}
+.site-header #main-nav a {
+  color: var(--global-palette-black-nav);
 }
 .site-header .cppmoderno-search-button {
   margin-left: 0px;
@@ -15417,6 +15424,13 @@ body {
 .site-main .left-side-hero h1, .site-main .left-side-hero .h1 {
   font-size: clamp(2.25rem, 1.4688rem + 2.5vw, 3.5rem);
 }
+.site-main .call-to-learn-card {
+  border: 0px;
+  padding-left: 0;
+}
+.site-main .call-to-learn-card .card-body {
+  padding-left: 0;
+}
 .site-main .call-to-learn-card .call-to-learn-wrapper {
   gap: 1.5em;
   display: flex;
@@ -15441,7 +15455,9 @@ body {
   color: var(--global-palette-highlight);
   transition: all 0.1s linear;
 }
-.site-main .entry-taxonomies a :hover, .site-main .entry-taxonomies a :active, .site-main .entry-taxonomies a :focus {
+.site-main .entry-taxonomies a :hover,
+.site-main .entry-taxonomies a :active,
+.site-main .entry-taxonomies a :focus {
   color: var(--global-palette-highlight-alt);
 }
 .site-main .entry-title a {
@@ -15452,6 +15468,11 @@ body {
 }
 .site-main .entry-meta * {
   color: var(--global-palette-transparent-gray);
+  font-weight: 500;
+}
+
+.site-footer {
+  background: linear-gradient(180deg, #f5f5f8 0%, rgba(31, 50, 120, 0.57) 100%);
 }
 
 /*# sourceMappingURL=theme.css.map */

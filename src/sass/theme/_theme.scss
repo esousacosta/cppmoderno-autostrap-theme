@@ -101,15 +101,24 @@ body {
         }
 
         a {
+            padding: 12px 12px 12px 16px;
+            box-shadow: 0px 8px 12px rgba(2,30,84,.06);
+            border: 1px solid lightgray;
             display: inline-flex;
             align-items: center;
             gap: 5px;
             color: var(--global-palette-black);
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1) !important;
+            }
 
             img {
                 height: 30px;
             }
         }
+
     }
 
     .entry-taxonomies {
@@ -146,8 +155,4 @@ body {
 
 #wrapper-footer {
     background: linear-gradient(180deg, #f5f5f8 0%, rgba(31, 50, 120, 0.57) 100%);
-
-    // .site-footer {
-    //     background: linear-gradient(180deg, #f5f5f8 0%, rgba(31, 50, 120, 0.57) 100%);
-    // }
 }

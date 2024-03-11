@@ -15440,10 +15440,17 @@ body {
   font-weight: 600;
 }
 .site-main .call-to-learn-card a {
+  padding: 12px 12px 12px 16px;
+  box-shadow: 0px 8px 12px rgba(2, 30, 84, 0.06);
+  border: 1px solid lightgray;
   display: inline-flex;
   align-items: center;
   gap: 5px;
   color: var(--global-palette-black);
+  transition: transform 0.2s ease-in-out;
+}
+.site-main .call-to-learn-card a:hover {
+  transform: scale(1.1) !important;
 }
 .site-main .call-to-learn-card a img {
   height: 30px;

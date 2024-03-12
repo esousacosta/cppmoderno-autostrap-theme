@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
+$current_page_slug = get_query_var('pagename');
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
@@ -61,7 +62,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			understrap_pagination();
 
 			// Do the right sidebar check and close div#primary.
-			get_template_part( 'global-templates/right-sidebar-check' );
+			if ($current_page_slug != 'arquivo') {
+				get_template_part( 'global-templates/right-sidebar-check' );
+			}
 			?>
 
 		</div><!-- .row -->

@@ -18,7 +18,7 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
 $current_page_slug = get_query_var('pagename');
-$isPostsPage = $current_page_slug != 'arquivo';
+$isPostsPage = $current_page_slug == 'arquivo';
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
@@ -36,8 +36,7 @@ $isPostsPage = $current_page_slug != 'arquivo';
 			get_template_part( 'global-templates/left-sidebar-check' );
 			?>
 
-			<main class="site-main" id="main">
-
+			<main class="site-main <?php if($isPostsPage) : echo "posts-main"; endif;?>" id="main">
 				<?php
 				if ( have_posts() ) {
 					// Start the Loop.
@@ -67,7 +66,7 @@ $isPostsPage = $current_page_slug != 'arquivo';
 			understrap_pagination();
 
 			// Do the right sidebar check and close div#primary.
-			if ($isPostsPage) {
+			if (!$isPostsPage) {
 				get_template_part( 'global-templates/right-sidebar-check' );
 			}
 			?>

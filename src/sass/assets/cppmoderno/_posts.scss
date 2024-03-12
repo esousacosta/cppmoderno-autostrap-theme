@@ -1,0 +1,21 @@
+// SCSS rules for the ordinary content
+.row {
+    .posts-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+
+        article {
+            display: flex;
+        }
+
+        .entry-header {
+            h2 {
+            }
+        }
+
+        .post-card {
+            flex-grow: 1;
+        }
+    }
+}

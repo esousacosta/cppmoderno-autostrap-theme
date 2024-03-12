@@ -15358,6 +15358,18 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+.row .posts-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}
+.row .posts-main article {
+  display: flex;
+}
+.row .posts-main .post-card {
+  flex-grow: 1;
+}
+
 :root {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;

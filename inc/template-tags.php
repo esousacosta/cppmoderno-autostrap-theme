@@ -90,10 +90,10 @@ if ( ! function_exists( 'understrap_categories_tags_list' ) ) {
 }
 
 function cppmoderno_understrap_categories_list() {
-	$categoriesList = get_the_category_list( understrap_get_list_item_separator());
+	$categoriesList = get_the_category_list( ' | ');
 	if ($categoriesList && understrap_categorized_blog()){
 		/* translators: %s: Categories of current post */
-		printf('<span>' . esc_html__('Publicado em %s', 'understrap' ) . '</span>', $categoriesList); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		printf('<span class="archive-post-tags">' . esc_html__('Publicado em %s', 'understrap' ) . '</span>', $categoriesList); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 

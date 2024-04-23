@@ -15373,6 +15373,23 @@ figure.woocommerce-product-gallery__wrapper {
 .row .posts-main .post-card {
   flex-grow: 1;
 }
+.row .posts-main .post-card .entry-header .archive-post-tags {
+  color: rgba(37, 38, 94, 0.8);
+}
+.row .posts-main .post-card .entry-header .archive-post-tags a {
+  color: var(--global-palette-highlight);
+  font-weight: bold;
+  text-decoration: none;
+}
+.row .posts-main .post-card .entry-header .entry-title {
+  line-height: 23px;
+}
+.row .posts-main .post-card .entry-header .entry-title a {
+  font-weight: 700;
+  font-size: var(--global-kb-font-size-md, 1.25rem);
+  text-decoration: none;
+  color: var(--global-palette3);
+}
 
 :root {
   --global-palette-highlight: #1b41c7;
@@ -15485,15 +15502,6 @@ body {
 .site-main .entry-taxonomies a :active,
 .site-main .entry-taxonomies a :focus {
   color: var(--global-palette-highlight-alt);
-}
-.site-main .entry-title {
-  line-height: 23px;
-}
-.site-main .entry-title a {
-  font-weight: 700;
-  font-size: var(--global-kb-font-size-md, 1.25rem);
-  text-decoration: none;
-  color: var(--global-palette3);
 }
 .site-main .entry-meta * {
   color: var(--global-palette-transparent-gray);

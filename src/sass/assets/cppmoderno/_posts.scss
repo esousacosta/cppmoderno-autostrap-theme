@@ -9,13 +9,32 @@
             display: flex;
         }
 
-        .entry-header {
-            h2 {
-            }
-        }
-
         .post-card {
             flex-grow: 1;
+
+            .entry-header {
+                .archive-post-tags {
+                    color: rgba(37, 38, 94, 0.8);
+                    a {
+                        color: var(--global-palette-highlight);
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+                .entry-title {
+                    line-height: 23px;
+
+                    a {
+                        font-weight: 700;
+                        font-size: var(--global-kb-font-size-md, 1.25rem);
+                        text-decoration: none;
+                        color: var(--global-palette3);
+                    }
+                }
+            }
+
+
+
         }
     }
 }

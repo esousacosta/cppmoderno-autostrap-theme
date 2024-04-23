@@ -2,6 +2,7 @@
 @import "../assets/cppmoderno/archive";
 @import "../assets/cppmoderno/posts";
 
+
 :root {
     --global-palette-highlight: #1b41c7;
     --global-palette-highlight-alt: #1f3278;
@@ -11,7 +12,7 @@
 }
 
 body {
-    font-family: "Plus Jakarta Sans", sans-serif
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .site-header {
@@ -144,6 +145,8 @@ body {
     }
 
     .entry-title {
+        line-height: 23px;
+        
         a {
             font-weight: 700;
             font-size: var(--global-kb-font-size-md, 1.25rem);

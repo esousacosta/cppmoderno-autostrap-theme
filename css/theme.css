@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("http://localhost/cppmoderno/wp-content/themes/understrap-main/fonts/PlusJakartaSans-Regular.ttf");
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -15360,7 +15364,7 @@ figure.woocommerce-product-gallery__wrapper {
 
 .row .posts-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5em;
 }
 .row .posts-main article {
@@ -15481,6 +15485,9 @@ body {
 .site-main .entry-taxonomies a :active,
 .site-main .entry-taxonomies a :focus {
   color: var(--global-palette-highlight-alt);
+}
+.site-main .entry-title {
+  line-height: 23px;
 }
 .site-main .entry-title a {
   font-weight: 700;

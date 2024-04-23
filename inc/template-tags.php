@@ -89,6 +89,14 @@ if ( ! function_exists( 'understrap_categories_tags_list' ) ) {
 	}
 }
 
+function cppmoderno_understrap_categories_list() {
+	$categoriesList = get_the_category_list( understrap_get_list_item_separator());
+	if ($categoriesList && understrap_categorized_blog()){
+		/* translators: %s: Categories of current post */
+		printf('<span>' . esc_html__('Publicado em %s', 'understrap' ) . '</span>', $categoriesList); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+}
+
 if ( ! function_exists( 'understrap_categories_list' ) ) {
 	/**
 	 * Displays a list of categories.
@@ -96,11 +104,12 @@ if ( ! function_exists( 'understrap_categories_list' ) ) {
 	 * @since 1.2.0
 	 */
 	function understrap_categories_list() {
-		$categories_list = get_the_category_list( understrap_get_list_item_separator() );
-		if ( $categories_list && understrap_categorized_blog() ) {
-			/* translators: %s: Categories of current post */
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %s', 'understrap' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-		}
+		cppmoderno_understrap_categories_list();
+		// $categories_list = get_the_category_list( understrap_get_list_item_separator() );
+		// if ( $categories_list && understrap_categorized_blog() ) {
+		// 	/* translators: %s: Categories of current post */
+		// 	printf( '<span class="cat-links">' . esc_html__( 'Posted in %s', 'understrap' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		// }
 	}
 }
 

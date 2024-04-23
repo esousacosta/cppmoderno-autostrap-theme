@@ -93,7 +93,7 @@ function cppmoderno_understrap_categories_list() {
 	$categoriesList = get_the_category_list( ' | ');
 	if ($categoriesList && understrap_categorized_blog()){
 		/* translators: %s: Categories of current post */
-		printf('<span class="archive-post-tags">' . esc_html__('Publicado em %s', 'understrap' ) . '</span>', $categoriesList); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		printf('<span class="archive-post-tags">' . esc_html__('%s', 'understrap' ) . '</span>', $categoriesList); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 

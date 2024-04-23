@@ -14,7 +14,13 @@
 
             .entry-header {
                 .archive-post-tags {
+
+                    margin-bottom: 0.5em;
+                    letter-spacing: .05em;
+                    font-size: 70%;
+                    text-transform: uppercase;
                     color: rgba(37, 38, 94, 0.8);
+
                     a {
                         color: var(--global-palette-highlight);
                         font-weight: bold;
@@ -22,7 +28,7 @@
                     }
                 }
                 .entry-title {
-                    line-height: 23px;
+                    line-height: 20px;
 
                     a {
                         font-weight: 700;

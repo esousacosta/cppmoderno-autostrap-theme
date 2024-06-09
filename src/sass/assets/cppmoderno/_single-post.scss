@@ -11,6 +11,13 @@ code {
 #main {
     .entry-content {
 
+        .wp-block-separator {
+            max-width: 160px;
+            border-top: 2px solid;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         // Enlighter section for code formatting
         .enlighter-default {
             border-radius: 5px;

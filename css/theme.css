@@ -15445,6 +15445,12 @@ code {
   color: inherit;
 }
 
+#main .entry-content .wp-block-separator {
+  max-width: 160px;
+  border-top: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
 #main .entry-content .enlighter-default {
   border-radius: 5px;
 }
@@ -15486,6 +15492,10 @@ body {
 }
 body .has-text-align-justify {
   text-align: justify;
+}
+body .wp-block-heading {
+  font-weight: 700;
+  color: var(--global-palette-3);
 }
 
 .site-header {

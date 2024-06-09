@@ -19,6 +19,11 @@ body {
     .has-text-align-justify {
         text-align: justify;
     }
+
+    .wp-block-heading {
+        font-weight: 700;
+        color: var(--global-palette-3)
+    }
 }
 
 .site-header {

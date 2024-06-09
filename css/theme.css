@@ -15445,6 +15445,34 @@ code {
   color: inherit;
 }
 
+#main .entry-content .enlighter-default {
+  border-radius: 5px;
+}
+#main .entry-content .enlighter-default > .enlighter-code {
+  border-radius: 5px;
+  padding: 10px 0;
+}
+#main .entry-content .enlighter-default > .enlighter-code .enlighter span {
+  font-size: 16px;
+  font-family: ui-monospace, SFMono-Refular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.lwptoc li.lwptoc_item::before {
+  content: "•";
+  color: #1b41c7;
+  margin-right: 0.5em;
+}
+.lwptoc li.lwptoc_item ul > li.lwptoc_item {
+  font-size: 95%;
+}
+.lwptoc li.lwptoc_item ul > li.lwptoc_item::before {
+  content: "—";
+  color: #1b41c7;
+  margin-right: 0.5em;
+}
+
 :root {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;
@@ -15455,6 +15483,9 @@ code {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+body .has-text-align-justify {
+  text-align: justify;
 }
 
 .site-header {

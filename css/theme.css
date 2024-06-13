@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("http://localhost/cppmoderno/wp-content/themes/understrap-main/fonts/PlusJakartaSans-Regular.ttf");
+  src: url("http://localhost/cppmoderno/wp-content/themes/understrap-main/fonts/PlusJakartaSans-Medium.ttf");
 }
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
@@ -665,12 +665,12 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 .row {
@@ -12218,7 +12218,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
   body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 @media (min-width: 1400px) {
@@ -12226,7 +12226,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
   body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
-    max-width: 1140px;
+    max-width: 1280px;
   }
 }
 body.understrap-no-sidebar .alignwide,
@@ -15472,7 +15472,14 @@ code {
   line-height: 20px;
   font-weight: 400;
 }
+#main .entry-content a.m-a-box-name-url {
+  text-decoration: none;
+  color: var(--global-palette3);
+}
 
+.lwptoc .lwptoc_i {
+  background: var(--wp--preset--color--white) !important;
+}
 .lwptoc li.lwptoc_item::before {
   content: "•";
   color: #1b41c7;
@@ -15497,13 +15504,28 @@ code {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.75em;
+  color: rgba(37, 38, 94, 0.8);
 }
 body .has-text-align-justify {
   text-align: justify;
 }
 body .wp-block-heading {
   font-weight: 700;
-  color: var(--global-palette-3);
+  color: var(--global-palette3);
+}
+body h1, body .h1, body h5, body .h5 {
+  font-weight: 700;
+  color: var(--global-palette3);
+}
+body h2, body .h2, body h1, body .h1 {
+  font-weight: 600;
+  color: var(--global-palette3);
+}
+body a {
+  color: var(--global-palette-highlight);
 }
 
 .site-header {
@@ -15574,9 +15596,6 @@ body .wp-block-heading {
   gap: 1.5em;
   display: flex;
   padding: 0;
-}
-.site-main .call-to-learn-card h2, .site-main .call-to-learn-card .h2 {
-  font-weight: 600;
 }
 .site-main .call-to-learn-card a {
   padding: 12px 12px 12px 16px;

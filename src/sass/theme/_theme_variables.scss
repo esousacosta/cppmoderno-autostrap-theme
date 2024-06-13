@@ -7,3 +7,15 @@ $purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
 $primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
 $font-family-sans-serif: "Plus Jakarta Sans", sans-serif;
 $cppmoderno-text-huge: clamp(2.25rem, 1.4688rem + 2.5000vw, 3.5rem);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px,
+  xxl: 1280px
+);
+
+$cppmoderno-body-line-height: 1.75em;
+$cppmoderno-body-font-color: rgba(37, 38, 94, 0.8);
+    

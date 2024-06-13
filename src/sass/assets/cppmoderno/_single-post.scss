@@ -45,6 +45,11 @@ code {
             }
         }
 
+        a.m-a-box-name-url {
+            text-decoration: none;
+            color: var(--global-palette3);
+        }
+
     }
 }
 
@@ -52,6 +57,10 @@ code {
 // It has been extracted from the #main block
 // because the TOC also exists in the sidebar
 .lwptoc {
+        .lwptoc_i {
+            background: var(--wp--preset--color--white) !important;
+        }
+
     li.lwptoc_item {
 
         &::before {

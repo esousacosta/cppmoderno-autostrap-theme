@@ -18,4 +18,7 @@ $container-max-widths: (
 
 $cppmoderno-body-line-height: 1.75em;
 $cppmoderno-body-font-color: rgba(37, 38, 94, 0.8);
-    
+
+:root {
+  --global-md-spacing: 2rem;
+}

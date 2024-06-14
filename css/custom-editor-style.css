@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+  --global-md-spacing: 2rem;
+}
+
 *,
 *::before,
 *::after {

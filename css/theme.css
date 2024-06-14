@@ -3,6 +3,10 @@
   font-family: "Plus Jakarta Sans";
   src: url("http://localhost/cppmoderno/wp-content/themes/understrap-main/fonts/PlusJakartaSans-Medium.ttf");
 }
+:root {
+  --global-md-spacing: 2rem;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -15449,11 +15453,47 @@ code {
   opacity: 1;
   color: rgba(37, 38, 94, 0.8);
 }
+#main .entry-content h2, #main .entry-content .h2 {
+  font-size: min(28px, 2rem);
+  line-height: 1.5;
+  margin: 0.5em 0 0.5em;
+}
+#main .entry-content ul {
+  text-align: justify;
+}
+#main .entry-content address,
+#main .entry-content figure,
+#main .entry-content hr,
+#main .entry-content p,
+#main .entry-content table,
+#main .entry-content pre,
+#main .entry-content form,
+#main .entry-content .wp-block-buttons,
+#main .entry-content .wp-block-button,
+#main .entry-content .wc-block-grid,
+#main .entry-content .wp-block-kadence-advancedbtn,
+#main .entry-content .wp-block-media-text,
+#main .entry-content .wp-block-cover,
+#main .entry-content -asset,
+#main .entry-content .wp-block-kadence-form,
+#main .entry-content .wp-block-group,
+#main .entry-content .wp-block-yoast-faq-block,
+#main .entry-content .wp-block-yoast-how-to-block,
+#main .entry-content .schema-faq-section,
+#main .entry-content .wp-block-kadence-tableofcontents,
+#main .entry-content .enlighter-default,
+#main .entry-content .wp-block-kadence-iconlist,
+#main .entry-content [class*=__inner-content] {
+  margin-top: 0;
+  margin-bottom: var(--global-md-spacing);
+}
 #main .entry-content .wp-block-separator {
-  max-width: 160px;
   border-top: 2px solid;
   margin-left: auto;
   margin-right: auto;
+}
+#main .entry-content .wp-block-separator:not(.is-style-wide) {
+  max-width: 160px;
 }
 #main .entry-content figcaption.wp-element-caption {
   text-align: center;

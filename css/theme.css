@@ -15512,9 +15512,12 @@ code {
   line-height: 20px;
   font-weight: 400;
 }
-#main .entry-content a.m-a-box-name-url {
+#main .entry-content .m-a-box-item a.m-a-box-name-url {
   text-decoration: none;
   color: var(--global-palette3);
+}
+#main .entry-content .m-a-box-item .m-a-box-bio {
+  text-align: justify;
 }
 
 .lwptoc .lwptoc_i {

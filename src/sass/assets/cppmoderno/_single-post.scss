@@ -26,29 +26,29 @@ code {
             text-align: justify;
         }
 
-         address,
-         figure,
-         hr,
-         p,
-         table,
-         pre,
-         form,
-         .wp-block-buttons,
-         .wp-block-button,
-         .wc-block-grid,
-         .wp-block-kadence-advancedbtn,
-         .wp-block-media-text,
-         .wp-block-cover,
-         -asset,
-         .wp-block-kadence-form,
-         .wp-block-group,
-         .wp-block-yoast-faq-block,
-         .wp-block-yoast-how-to-block,
-         .schema-faq-section,
-         .wp-block-kadence-tableofcontents,
-         .enlighter-default,
-         .wp-block-kadence-iconlist,
-         [class*=__inner-content] {
+        address,
+        figure,
+        hr,
+        p,
+        table,
+        pre,
+        form,
+        .wp-block-buttons,
+        .wp-block-button,
+        .wc-block-grid,
+        .wp-block-kadence-advancedbtn,
+        .wp-block-media-text,
+        .wp-block-cover,
+        -asset,
+        .wp-block-kadence-form,
+        .wp-block-group,
+        .wp-block-yoast-faq-block,
+        .wp-block-yoast-how-to-block,
+        .schema-faq-section,
+        .wp-block-kadence-tableofcontents,
+        .enlighter-default,
+        .wp-block-kadence-iconlist,
+        [class*=__inner-content] {
             margin-top: 0;
             margin-bottom: var(--global-md-spacing)
         }
@@ -85,9 +85,15 @@ code {
             }
         }
 
-        a.m-a-box-name-url {
-            text-decoration: none;
-            color: var(--global-palette3);
+        .m-a-box-item {
+            a.m-a-box-name-url {
+                text-decoration: none;
+                color: var(--global-palette3);
+            }
+
+            .m-a-box-bio {
+                text-align: justify;
+            }
         }
 
     }

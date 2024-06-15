@@ -9,6 +9,14 @@ code {
 }
 
 #main {
+    .cppmoderno-post-image {
+        display: flex;
+
+        img {
+            flex: 1;
+        }
+    }
+
     .entry-content {
 
         hr {

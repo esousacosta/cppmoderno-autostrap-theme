@@ -15449,6 +15449,12 @@ code {
   color: inherit;
 }
 
+#main .cppmoderno-post-image {
+  display: flex;
+}
+#main .cppmoderno-post-image img {
+  flex: 1;
+}
 #main .entry-content hr {
   opacity: 1;
   color: rgba(37, 38, 94, 0.8);

@@ -1,0 +1,46 @@
+nav {
+    margin: var(--cppmoderno-global-lg-spacing) auto;
+
+    ul {
+        gap: 1em;
+
+        .page-item {
+
+            min-width: 2.5em;
+            line-height: 2.25em;
+            text-align: center;
+
+            .active {
+                .page-link {
+                    border-radius: 0.25em;
+                    background-color: var(--cppmoderno-global-btn-bg);
+                    border-color: var(--cppmoderno-global-btn-bg);
+                }
+            }
+
+            :not(.current) {
+                color: inherit;
+            }
+
+            :not(.active) {
+                border: 2px solid transparent;
+                border-radius: .25em;
+
+                &:not(:first-child) {
+                    .page-link {
+                        margin-left: 0px;
+                    }
+                }
+
+                a {
+                    border: none;
+                }
+
+                &:hover {
+                    border-color: var(--cppmoderno-global-btn-bg);
+                }
+
+            }
+        }
+    }
+}

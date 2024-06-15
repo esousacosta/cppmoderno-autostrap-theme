@@ -13,17 +13,20 @@ defined('ABSPATH') || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <div class="card post-card">
 
-        <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
-
+        <?php
+        echo sprintf('<a class="post-thumbnail" href=%s>', esc_url(get_permalink()));
+        echo get_the_post_thumbnail($post->ID, 'large');
+        echo'</a>';
+        ?>
         <div class="card-body">
 
             <div class="card-title">
                 <header class="entry-header">
 
-                <!-- Experimenting with the card's content -->
-                <div>
-                    <?php understrap_categories_list();?>
-                </div>
+                    <!-- Experimenting with the card's content -->
+                    <div>
+                        <?php understrap_categories_list(); ?>
+                    </div>
 
                     <?php
                     the_title(

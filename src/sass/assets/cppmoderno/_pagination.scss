@@ -1,4 +1,4 @@
-nav {
+.pagination-nav {
     margin: var(--cppmoderno-global-lg-spacing) auto;
 
     ul {
@@ -6,9 +6,10 @@ nav {
 
         .page-item {
 
+
             &>* {
-                padding: 0;
-            }
+                    padding: 0;
+                }
 
             min-width: 2.5em;
             line-height: 2.25em;

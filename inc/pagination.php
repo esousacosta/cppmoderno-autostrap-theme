@@ -72,7 +72,7 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 		?>
 
 		<!-- The pagination component -->
-		<nav aria-labelledby="posts-nav-label">
+		<nav class="pagination-nav" aria-labelledby="posts-nav-label">
 
 			<h2 id="posts-nav-label" class="screen-reader-text">
 				<?php echo esc_html( $args['screen_reader_text'] ); ?>

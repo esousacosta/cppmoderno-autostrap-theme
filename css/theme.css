@@ -15626,8 +15626,13 @@ code {
   display: none;
 }
 .categories-navbar .carousel-view .item-list .cat-item {
+  border: 1px solid;
+  padding: 0.25em;
   scroll-snap-align: start;
   border-radius: 0.25em;
+}
+.categories-navbar .carousel-view .item-list .cat-item a {
+  text-decoration: none;
 }
 .categories-navbar .prev-btn, .categories-navbar .next-btn {
   border: none;

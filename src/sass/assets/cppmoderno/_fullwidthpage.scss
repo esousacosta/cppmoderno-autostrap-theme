@@ -21,8 +21,13 @@
             }
 
             .cat-item {
+                border: 1px solid;
+                padding: .25em;
                 scroll-snap-align: start;
                 border-radius: 0.25em;
+                a {
+                    text-decoration: none;
+                }
             }
         }
     }

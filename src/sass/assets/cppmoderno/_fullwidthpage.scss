@@ -1,0 +1,36 @@
+.categories-navbar {
+    .carousel-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5em;
+        transition: all 0.25s ease-in;
+
+        .item-list {
+            display: flex;
+            width: inherit;
+            gap: 0.5em;
+            scroll-behavior: smooth;
+            transition: all 0.25s ease-in;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow: auto; scroll-snap-type: x mandatory;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .cat-item {
+                scroll-snap-align: start;
+                border-radius: 0.25em;
+            }
+        }
+    }
+
+    .prev-btn, .next-btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+}

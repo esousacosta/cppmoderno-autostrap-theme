@@ -7,6 +7,11 @@
   --global-palette1: #1b41c7 !important;
 }
 
+:root {
+  --global-md-spacing: var(--cppmoderno-global-md-spacing);
+  --global-lg-spacing: var(--cppmoderno-global-lg-spacing);
+}
+
 *,
 *::before,
 *::after {

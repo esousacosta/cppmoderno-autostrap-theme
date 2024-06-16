@@ -11,6 +11,11 @@
   --global-palette1: #1b41c7 !important;
 }
 
+:root {
+  --global-md-spacing: var(--cppmoderno-global-md-spacing);
+  --global-lg-spacing: var(--cppmoderno-global-lg-spacing);
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -15379,7 +15384,15 @@ figure.woocommerce-product-gallery__wrapper {
   display: flex;
 }
 .row .posts-main .post-card {
+  border-radius: 15px;
   flex-grow: 1;
+  box-shadow: 0px 0px 8px -3px var(--global-palette3);
+}
+.row .posts-main .post-card .post-thumbnail {
+  border-radius: 15px;
+}
+.row .posts-main .post-card .post-thumbnail .wp-post-image {
+  border-radius: 15px;
 }
 .row .posts-main .post-card .entry-header .archive-post-tags {
   margin-bottom: 0.5em;
@@ -15589,6 +15602,37 @@ code {
   position: -webkit-sticky;
   position: sticky;
   top: 2%;
+}
+
+.categories-navbar .carousel-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  transition: all 0.25s ease-in;
+}
+.categories-navbar .carousel-view .item-list {
+  display: flex;
+  width: inherit;
+  gap: 0.5em;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.categories-navbar .carousel-view .item-list::-webkit-scrollbar {
+  display: none;
+}
+.categories-navbar .carousel-view .item-list .cat-item {
+  scroll-snap-align: start;
+  border-radius: 0.25em;
+}
+.categories-navbar .prev-btn, .categories-navbar .next-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 :root {

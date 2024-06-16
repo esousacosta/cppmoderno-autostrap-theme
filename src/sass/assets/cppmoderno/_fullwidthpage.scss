@@ -21,11 +21,19 @@
             }
 
             .cat-item {
-                border: 1px solid;
+                border: 2px solid transparent;
                 padding: .25em;
                 scroll-snap-align: start;
                 border-radius: 0.25em;
+                color: var(--cppmoderno-grayish-text);
+                &:hover{
+                    border-radius: .25em;
+                    background-color: var(--cppmoderno-global-btn-bg);
+                    color: white;
+                    transition: all 0.1s ease-in-out;
+                }
                 a {
+                    color: inherit;
                     text-decoration: none;
                 }
             }
@@ -35,6 +43,7 @@
     .prev-btn, .next-btn {
         border: none;
         background: none;
+        padding: 0 6px;
         cursor: pointer;
     }
     

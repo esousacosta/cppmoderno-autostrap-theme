@@ -8,10 +8,11 @@
   --cppmoderno-global-lg-spacing: 2.5rem;
   --cppmoderno-global-btn-bg: #1b41c7;
   --cppmoderno-global-bg-color: #fff;
-  --global-palette1: #1b41c7 !important;
+  --cppmoderno-grayish-text: $cppmoderno-body-font-color;
 }
 
 :root {
+  --global-palette1: #1b41c7 !important;
   --global-md-spacing: var(--cppmoderno-global-md-spacing);
   --global-lg-spacing: var(--cppmoderno-global-lg-spacing);
 }
@@ -15626,17 +15627,26 @@ code {
   display: none;
 }
 .categories-navbar .carousel-view .item-list .cat-item {
-  border: 1px solid;
+  border: 2px solid transparent;
   padding: 0.25em;
   scroll-snap-align: start;
   border-radius: 0.25em;
+  color: var(--cppmoderno-grayish-text);
+}
+.categories-navbar .carousel-view .item-list .cat-item:hover {
+  border-radius: 0.25em;
+  background-color: var(--cppmoderno-global-btn-bg);
+  color: white;
+  transition: all 0.1s ease-in-out;
 }
 .categories-navbar .carousel-view .item-list .cat-item a {
+  color: inherit;
   text-decoration: none;
 }
 .categories-navbar .prev-btn, .categories-navbar .next-btn {
   border: none;
   background: none;
+  padding: 0 6px;
   cursor: pointer;
 }
 

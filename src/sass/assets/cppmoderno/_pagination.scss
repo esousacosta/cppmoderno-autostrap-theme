@@ -14,8 +14,8 @@
             text-align: center;
             border-radius: .25em;
 
-            .active {
-                .page-link {
+            &.active {
+                &>.page-link.current {
                     border-radius: 0.25em;
                     background-color: var(--cppmoderno-global-btn-bg);
                     border-color: var(--cppmoderno-global-btn-bg);
@@ -36,11 +36,11 @@
                         background-color: var(--cppmoderno-global-bg-color);
                     }
                 }
+            }
 
-                &:not(:first-child) {
-                    .page-link {
-                        margin-left: 0px;
-                    }
+            &:not(:first-child) {
+                .page-link {
+                    margin-left: 0px;
                 }
             }
         }

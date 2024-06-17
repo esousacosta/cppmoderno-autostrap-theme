@@ -30,7 +30,7 @@ $isPostsPage = $current_page_slug == 'arquivo';
 
 	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
-		<div class="row blabla">
+		<div class="row">
 
 			<?php
 			// Do the left sidebar check and open div#primary.

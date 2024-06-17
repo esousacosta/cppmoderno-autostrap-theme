@@ -70,10 +70,21 @@ if ( ! function_exists( 'understrap_entry_footer' ) ) {
 	function understrap_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
-			understrap_categories_tags_list();
+			understrap_tags_only_list();
 		}
 		understrap_comments_popup_link();
 		understrap_edit_post_link();
+	}
+}
+
+if ( ! function_exists( 'understrap_tags_only_list' ) ) {
+	/**
+	 * Displays a list of tags.
+	 *
+	 * @since 1.2.0
+	 */
+	function understrap_tags_only_list() {
+		printf(the_tags("<ul class='tags-links'><li class='tag-link tag-item'>#", "</li><li class='tag-link tag-item'>#", "</li></ul>"));
 	}
 }
 

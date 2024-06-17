@@ -1,0 +1,33 @@
+.tags-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+
+    .tag-link {
+        list-style: none;
+        padding: 0.4em 0.6em;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        font-size: 80%;
+        border: 1px solid var(--global-gray-500);
+        border-radius: .25em;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        a {
+            color: #000;
+            text-decoration: none;
+        transition: all .2s ease-in-out;
+        }
+
+        &:hover {
+            background-color: var(--cppmoderno-global-btn-bg);
+            border-color: var(--cppmoderno-global-btn-bg);
+            color: var(--global-palette-btn);
+
+            a {
+                color: var(--global-palette-btn);
+            }
+        }
+    }
+}

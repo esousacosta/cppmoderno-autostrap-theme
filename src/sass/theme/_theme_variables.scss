@@ -25,15 +25,18 @@ $cppmoderno-body-font-color: rgba(37, 38, 94, 0.8);
   --cppmoderno-global-lg-spacing: 2.5rem;
   --cppmoderno-global-btn-bg: #1b41c7;
   --cppmoderno-global-bg-color: #fff;
+  --cppmoderno-palette-btn: #fff;
   --cppmoderno-grayish-text: $cppmoderno-body-font-color;
 }
 
 :root {
   --global-palette1: #1b41c7 !important;
   --global-palette2:#1f3278  !important;
+  --global-palette-btn: var(--cppmoderno-palette-btn);
   --global-md-spacing: var(--cppmoderno-global-md-spacing);
   --global-lg-spacing: var(--cppmoderno-global-lg-spacing);
   --global-palette-btn-bg: var(--cppmoderno-global-btn-bg);
   --global-palette-btn-bg-hover: #1f3278;
   --global-palette-highlight-alt: var(--global-palette2);
+  --global-gray-500: #A0AEC0;
 }

@@ -1,3 +1,22 @@
+body.page-template-right-sidebarpage {
+    h2, h3 {
+        a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                color: var(--global-palette-highlight-alt);
+            }
+        }
+    }
+    p {
+        text-align: justify;
+    }
+
+    .wp-block-media-text__content {
+        padding-right: 0;
+    }
+}
+
 #right-sidebar {
     aside:last-child {
         position: sticky;

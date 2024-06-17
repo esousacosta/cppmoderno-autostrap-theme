@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -8,16 +9,16 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod('understrap_container_type');
 ?>
-
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
+
+	<div class="<?php echo esc_attr($container); ?>">
 
 		<div class="row">
 
@@ -41,7 +42,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #wrapper-footer -->
 
-<?php // Closing div#page from header.php. ?>
+<?php // Closing div#page from header.php. 
+?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
@@ -49,4 +51,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </body>
 
 </html>
-

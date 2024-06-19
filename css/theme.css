@@ -15701,6 +15701,9 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   color: var(--global-palette-btn);
 }
 
+.related-posts {
+  padding: 0;
+}
 .related-posts .carousel-view {
   display: flex;
   gap: 40px;
@@ -15709,6 +15712,29 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
 .related-posts .carousel-view .post-carousel-item {
   flex-shrink: 0;
   width: calc(33.3333% - 26.77px);
+}
+.related-posts .carousel-view .post-carousel-item .crp_link {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.related-posts .carousel-view .post-carousel-item .crp_link figure {
+  margin-bottom: 1.1em;
+}
+.related-posts .carousel-view .post-carousel-item .crp_link .crp_title {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.related-posts .carousel-view .post-carousel-item .crp_link .crp_title:hover {
+  color: var(--global-palette-highlight-alt);
+}
+.related-posts .carousel-view .post-carousel-item .crp_author a {
+  text-decoration: none;
+  color: inherit;
+}
+.related-posts .carousel-view .post-carousel-item .crp_author a::after {
+  content: " •";
 }
 
 :root {

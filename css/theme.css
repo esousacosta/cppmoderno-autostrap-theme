@@ -15701,6 +15701,16 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   color: var(--global-palette-btn);
 }
 
+.related-posts .carousel-view {
+  display: flex;
+  gap: 40px;
+  overflow: auto;
+}
+.related-posts .carousel-view .post-carousel-item {
+  flex-shrink: 0;
+  width: calc(33.3333% - 26.77px);
+}
+
 :root {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;

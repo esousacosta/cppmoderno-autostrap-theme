@@ -1,0 +1,12 @@
+.related-posts {
+    .carousel-view {
+        display: flex;
+        gap: 40px;
+        overflow: auto;
+
+        .post-carousel-item {
+            flex-shrink: 0;
+            width: calc(33.3333% - 26.77px);
+        }
+    }
+}

@@ -1,33 +1,48 @@
+.crp-headline {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
 .related-posts {
     padding: 0;
+    margin-bottom: 1.5em;;
+
     .carousel-view {
         display: flex;
         gap: 40px;
         overflow: auto;
+        flex-wrap: wrap;
 
         .post-carousel-item {
             flex-shrink: 0;
             width: calc(33.3333% - 26.77px);
+
             .crp_link {
                 display: flex;
                 text-decoration: none;
                 flex-direction: column;
+
                 figure {
                     margin-bottom: 1.1em;
                 }
+
                 .crp_title {
                     color: black;
                     font-size: 1.1em;
                     font-weight: 700;
+
                     &:hover {
                         color: var(--global-palette-highlight-alt);
                     }
                 }
             }
+
             .crp_author {
                 a {
                     text-decoration: none;
                     color: inherit;
+
                     &::after {
                         content: ' \2022 ';
                     }

@@ -15622,6 +15622,9 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   top: 2%;
 }
 
+.categories-navbar {
+  margin-bottom: 1em;
+}
 .categories-navbar .carousel-view {
   display: flex;
   justify-content: space-between;
@@ -15701,13 +15704,21 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   color: var(--global-palette-btn);
 }
 
+.crp-headline {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
 .related-posts {
   padding: 0;
+  margin-bottom: 1.5em;
 }
 .related-posts .carousel-view {
   display: flex;
   gap: 40px;
   overflow: auto;
+  flex-wrap: wrap;
 }
 .related-posts .carousel-view .post-carousel-item {
   flex-shrink: 0;

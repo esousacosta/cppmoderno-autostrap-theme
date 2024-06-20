@@ -1,0 +1,30 @@
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    .comment-meta {
+        margin-left: 70px;
+        position: relative;
+
+        .comment-author {
+            .avatar {
+                position: absolute;
+                left: -70px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+        }
+        
+        .comment-metadata {
+            font-size: 80%;
+            padding-bottom: 0.5em;
+        }
+    }
+
+
+    ol {
+        list-style-type: none;
+    }
+}

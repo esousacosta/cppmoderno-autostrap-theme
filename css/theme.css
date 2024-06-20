@@ -15748,6 +15748,30 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   content: " •";
 }
 
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.comment-list .comment-meta {
+  margin-left: 70px;
+  position: relative;
+}
+.comment-list .comment-meta .comment-author .avatar {
+  position: absolute;
+  left: -70px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.comment-list .comment-meta .comment-metadata {
+  font-size: 80%;
+  padding-bottom: 0.5em;
+}
+.comment-list ol {
+  list-style-type: none;
+}
+
 :root {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;

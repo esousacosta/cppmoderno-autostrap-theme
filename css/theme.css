@@ -15564,6 +15564,10 @@ code {
   margin-right: 0.5em;
 }
 
+.post-navigation {
+  margin-bottom: 1em;
+}
+
 .pagination-nav {
   margin: var(--cppmoderno-global-lg-spacing) auto;
 }
@@ -15748,6 +15752,10 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   content: " •";
 }
 
+.comments-title {
+  margin-bottom: 1em;
+}
+
 .comment-list {
   list-style-type: none;
   padding: 0;
@@ -15803,6 +15811,13 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
 }
 .comment-list ol {
   list-style-type: none;
+}
+
+.pingback a {
+  font-style: italic;
+}
+.pingback .comment-body {
+  padding: 1em 0;
 }
 
 :root {

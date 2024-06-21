@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0;
 
+    .comment-body {
+        position: relative;
+        border-bottom: 1px solid var(--global-gray-500);
+        margin-bottom: 3em;
+    }
+
     .comment-meta {
         margin-left: 70px;
         position: relative;
@@ -15,11 +21,44 @@
                 height: 50px;
                 border-radius: 50px;
             }
+
+            .url {
+                text-decoration: none;
+                color: inherit;
+            }
         }
-        
+
         .comment-metadata {
             font-size: 80%;
             padding-bottom: 0.5em;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    .reply {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+
+        .comment-reply-link {
+            display: inline-block;
+            border: 1px solid #d1dbe4;
+            color: black;
+            padding: 0.5em 1em;
+            font-size: 85%;
+            line-height: 1;
+            text-decoration: none;
+            background: transparent;
+            transition: all .1s linear;
+
+            &:hover {
+                border-color: var(--global-palette4);
+            }
         }
     }
 

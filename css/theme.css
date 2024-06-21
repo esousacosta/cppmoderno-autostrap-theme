@@ -15753,6 +15753,11 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   padding: 0;
   margin: 0;
 }
+.comment-list .comment-body {
+  position: relative;
+  border-bottom: 1px solid var(--global-gray-500);
+  margin-bottom: 3em;
+}
 .comment-list .comment-meta {
   margin-left: 70px;
   position: relative;
@@ -15764,9 +15769,37 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   height: 50px;
   border-radius: 50px;
 }
+.comment-list .comment-meta .comment-author .url {
+  text-decoration: none;
+  color: inherit;
+}
 .comment-list .comment-meta .comment-metadata {
   font-size: 80%;
   padding-bottom: 0.5em;
+}
+.comment-list .comment-meta .comment-metadata a {
+  text-decoration: none;
+  color: inherit;
+}
+.comment-list .reply {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+.comment-list .reply .comment-reply-link {
+  display: inline-block;
+  border: 1px solid #d1dbe4;
+  color: black;
+  padding: 0.5em 1em;
+  font-size: 85%;
+  line-height: 1;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.1s linear;
+}
+.comment-list .reply .comment-reply-link:hover {
+  border-color: var(--global-palette4);
 }
 .comment-list ol {
   list-style-type: none;

@@ -1,0 +1,14 @@
+#navbarNavDropdown a.nav-link {
+    &:hover {
+        color: var(--global-palette-highlight-alt);
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+#dropdownMenuButton.dropdown-toggle {
+    &:hover {
+        color: var(--global-palette-highlight-alt);
+        transition: all 0.25s ease-in-out;
+    }
+    
+}

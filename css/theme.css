@@ -15820,6 +15820,16 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   padding: 1em 0;
 }
 
+#navbarNavDropdown a.nav-link:hover {
+  color: var(--global-palette-highlight-alt);
+  transition: all 0.25s ease-in-out;
+}
+
+#dropdownMenuButton.dropdown-toggle:hover {
+  color: var(--global-palette-highlight-alt);
+  transition: all 0.25s ease-in-out;
+}
+
 :root {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;

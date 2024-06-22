@@ -16,7 +16,14 @@ if ( ! is_active_sidebar( 'right-sidebar' ) ) {
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
-<?php if ( 'both' === $sidebar_pos ) : ?>
+<?php
+$isSinglePost = false;
+if (array_key_exists('isSinglePost', $args)) {
+	$isSinglePost = $args['isSinglePost'];
+}
+?>
+
+<?php if ( 'both' === $sidebar_pos || $isSinglePost) : ?>
 	<div class="col-md-3 widget-area" id="right-sidebar">
 <?php else : ?>
 	<div class="col-md-4 widget-area" id="right-sidebar">

@@ -16,17 +16,17 @@ defined('ABSPATH') || exit;
 
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
 	</header><!-- .entry-header -->
 
 	<div class="cppmoderno-post-image">
 		<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 	</div>
+
+		<div class="entry-meta">
+
+			<?php understrap_posted_on(); ?>
+
+		</div><!-- .entry-meta -->
 
 	<div class="entry-content">
 

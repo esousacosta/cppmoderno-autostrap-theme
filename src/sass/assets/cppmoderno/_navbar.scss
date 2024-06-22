@@ -10,5 +10,11 @@
         color: var(--global-palette-highlight-alt);
         transition: all 0.25s ease-in-out;
     }
-    
+}
+
+#main-nav {
+    .wp-block-search__input {
+        background-color: transparent;
+        border-color: black;
+    }
 }

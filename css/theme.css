@@ -15476,6 +15476,13 @@ code {
 #main .cppmoderno-post-image img {
   flex: 1;
 }
+#main .entry-meta {
+  font-size: 80%;
+  text-align: center;
+}
+#main .entry-meta a {
+  text-decoration: none;
+}
 #main .entry-content hr {
   opacity: 1;
   color: rgba(37, 38, 94, 0.8);
@@ -15828,6 +15835,11 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
 #dropdownMenuButton.dropdown-toggle:hover {
   color: var(--global-palette-highlight-alt);
   transition: all 0.25s ease-in-out;
+}
+
+#main-nav .wp-block-search__input {
+  background-color: transparent;
+  border-color: black;
 }
 
 :root {

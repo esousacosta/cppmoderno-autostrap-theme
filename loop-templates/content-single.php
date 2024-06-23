@@ -22,11 +22,15 @@ defined('ABSPATH') || exit;
 		<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 	</div>
 
-		<div class="entry-meta">
+	<div class="post-categories">
+		<?php understrap_categories_list(); ?>
+	</div>
 
-			<?php understrap_posted_on(); ?>
+	<div class="entry-meta">
 
-		</div><!-- .entry-meta -->
+		<?php understrap_posted_on(); ?>
+
+	</div><!-- .entry-meta -->
 
 	<div class="entry-content">
 

@@ -1,5 +1,33 @@
 // SCSS rules for the ordinary content
 .row {
+    .archive-post-tags {
+        margin-bottom: 0.5em;
+        letter-spacing: .05em;
+        font-size: 70%;
+        text-transform: uppercase;
+        color: rgba(37, 38, 94, 0.8);
+
+        a {
+            color: var(--global-palette-highlight);
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--global-palette-highlight-alt);
+            }
+        }
+    }
+
+
+    .entry-meta {
+        font-size: 80%;
+        margin: 1em 0;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
     .posts-main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -15,6 +43,17 @@
             flex-grow: 1;
             box-shadow: 0px 0px 8px -3px var(--global-palette3);
 
+            .entry-title {
+                line-height: 20px;
+
+                a {
+                    font-weight: 700;
+                    font-size: var(--global-kb-font-size-md, 1.25rem);
+                    text-decoration: none;
+                    color: var(--global-palette3);
+                }
+            }
+
             .post-thumbnail {
                 border-radius: 15px;
 
@@ -22,46 +61,6 @@
                     border-radius: 15px;
                 }
             }
-
-            .entry-header {
-                .archive-post-tags {
-
-                    margin-bottom: 0.5em;
-                    letter-spacing: .05em;
-                    font-size: 70%;
-                    text-transform: uppercase;
-                    color: rgba(37, 38, 94, 0.8);
-
-                    a {
-                        color: var(--global-palette-highlight);
-                        font-weight: bold;
-                        text-decoration: none;
-                    }
-                }
-
-                .entry-title {
-                    line-height: 20px;
-
-                    a {
-                        font-weight: 700;
-                        font-size: var(--global-kb-font-size-md, 1.25rem);
-                        text-decoration: none;
-                        color: var(--global-palette3);
-                    }
-                }
-
-                .entry-meta {
-                    font-size: 80%;
-                    margin: 1em 0;
-
-                    a {
-                        text-decoration: none;
-                    }
-                }
-            }
-
-
-
         }
     }
 

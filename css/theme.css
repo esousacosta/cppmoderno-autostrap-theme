@@ -15378,6 +15378,28 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+.row .archive-post-tags {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em;
+  font-size: 70%;
+  text-transform: uppercase;
+  color: rgba(37, 38, 94, 0.8);
+}
+.row .archive-post-tags a {
+  color: var(--global-palette-highlight);
+  font-weight: bold;
+  text-decoration: none;
+}
+.row .archive-post-tags a:hover {
+  color: var(--global-palette-highlight-alt);
+}
+.row .entry-meta {
+  font-size: 80%;
+  margin: 1em 0;
+}
+.row .entry-meta a {
+  text-decoration: none;
+}
 .row .posts-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -15392,39 +15414,20 @@ figure.woocommerce-product-gallery__wrapper {
   flex-grow: 1;
   box-shadow: 0px 0px 8px -3px var(--global-palette3);
 }
-.row .posts-main .post-card .post-thumbnail {
-  border-radius: 15px;
-}
-.row .posts-main .post-card .post-thumbnail .wp-post-image {
-  border-radius: 15px;
-}
-.row .posts-main .post-card .entry-header .archive-post-tags {
-  margin-bottom: 0.5em;
-  letter-spacing: 0.05em;
-  font-size: 70%;
-  text-transform: uppercase;
-  color: rgba(37, 38, 94, 0.8);
-}
-.row .posts-main .post-card .entry-header .archive-post-tags a {
-  color: var(--global-palette-highlight);
-  font-weight: bold;
-  text-decoration: none;
-}
-.row .posts-main .post-card .entry-header .entry-title {
+.row .posts-main .post-card .entry-title {
   line-height: 20px;
 }
-.row .posts-main .post-card .entry-header .entry-title a {
+.row .posts-main .post-card .entry-title a {
   font-weight: 700;
   font-size: var(--global-kb-font-size-md, 1.25rem);
   text-decoration: none;
   color: var(--global-palette3);
 }
-.row .posts-main .post-card .entry-header .entry-meta {
-  font-size: 80%;
-  margin: 1em 0;
+.row .posts-main .post-card .post-thumbnail {
+  border-radius: 15px;
 }
-.row .posts-main .post-card .entry-header .entry-meta a {
-  text-decoration: none;
+.row .posts-main .post-card .post-thumbnail .wp-post-image {
+  border-radius: 15px;
 }
 .row .wp-block-kadence-posts .loop-entry {
   display: flex;
@@ -15475,6 +15478,9 @@ code {
 }
 #main .cppmoderno-post-image img {
   flex: 1;
+}
+#main .post .post-categories {
+  text-align: center;
 }
 #main .post > .entry-meta {
   font-size: 80%;

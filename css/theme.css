@@ -15597,6 +15597,10 @@ code {
   margin-bottom: 1em;
 }
 
+.table, .wp-block-table table {
+  border-color: var(--global-palette3);
+}
+
 .pagination-nav {
   margin: var(--cppmoderno-global-lg-spacing) auto;
 }

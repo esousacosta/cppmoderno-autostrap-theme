@@ -17,11 +17,14 @@ code {
         }
     }
 
-    .entry-meta {
-        font-size: 80%;
-        text-align: center;
-        a {
-            text-decoration: none;
+    .post {
+        &>.entry-meta {
+            font-size: 80%;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 

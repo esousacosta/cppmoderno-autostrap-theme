@@ -15476,11 +15476,11 @@ code {
 #main .cppmoderno-post-image img {
   flex: 1;
 }
-#main .entry-meta {
+#main .post > .entry-meta {
   font-size: 80%;
   text-align: center;
 }
-#main .entry-meta a {
+#main .post > .entry-meta a {
   text-decoration: none;
 }
 #main .entry-content hr {
@@ -15663,6 +15663,7 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   scroll-snap-align: start;
   border-radius: 0.25em;
   color: var(--cppmoderno-grayish-text);
+  cursor: pointer;
 }
 .categories-navbar .carousel-view .item-list .cat-item:hover {
   border-radius: 0.25em;

@@ -27,6 +27,7 @@
                 scroll-snap-align: start;
                 border-radius: 0.25em;
                 color: var(--cppmoderno-grayish-text);
+                cursor: pointer;
                 &:hover{
                     border-radius: .25em;
                     background-color: var(--cppmoderno-global-btn-bg);

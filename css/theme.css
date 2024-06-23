@@ -15559,6 +15559,22 @@ code {
 #main .entry-content .m-a-box-item .m-a-box-bio {
   text-align: justify;
 }
+#main .kt-blocks-info-box-link-wrap {
+  padding: 0 1em 0;
+  align-items: center;
+}
+#main .kt-blocks-info-box-link-wrap * {
+  color: black;
+}
+#main .kt-blocks-info-box-link-wrap .kt-blocks-info-box-media {
+  padding: 1em 0;
+}
+#main .kt-blocks-info-box-link-wrap .kt-infobox-textcontent {
+  text-align: justify;
+}
+#main .kt-blocks-info-box-link-wrap .kt-infobox-textcontent .kt-blocks-info-box-text {
+  margin-bottom: 0;
+}
 
 .lwptoc .lwptoc_i {
   background: var(--wp--preset--color--white) !important;

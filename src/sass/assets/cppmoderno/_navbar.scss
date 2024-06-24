@@ -6,6 +6,8 @@
 }
 
 #dropdownMenuButton.dropdown-toggle {
+    font-size: 1em;
+    font-weight: 500;
     &:hover {
         color: var(--global-palette-highlight-alt);
         transition: all 0.25s ease-in-out;

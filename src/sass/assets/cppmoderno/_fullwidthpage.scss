@@ -1,5 +1,6 @@
 .categories-navbar {
     margin-bottom: 1em;
+
     .carousel-view {
         display: flex;
         justify-content: space-between;
@@ -15,7 +16,8 @@
             transition: all 0.25s ease-in;
             -ms-overflow-style: none;
             scrollbar-width: none;
-            overflow: auto; scroll-snap-type: x mandatory;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
 
             &::-webkit-scrollbar {
                 display: none;
@@ -28,12 +30,14 @@
                 border-radius: 0.25em;
                 color: var(--cppmoderno-grayish-text);
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     border-radius: .25em;
                     background-color: var(--cppmoderno-global-btn-bg);
                     color: white;
                     transition: all 0.1s ease-in-out;
                 }
+
                 a {
                     color: inherit;
                     text-decoration: none;
@@ -42,11 +46,26 @@
         }
     }
 
-    .prev-btn, .next-btn {
+    .prev-btn,
+    .next-btn {
         border: none;
         background: none;
         padding: 0 6px;
         cursor: pointer;
     }
-    
+
+}
+
+#main {
+    .left-side-hero {
+        * {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .right-side-hero {
+        figure {
+            text-align: center;
+        }
+    }
 }

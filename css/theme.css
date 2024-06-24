@@ -15881,6 +15881,17 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   border-color: black;
 }
 
+.page-template-right-sidebarpage .row {
+  gap: 2em;
+}
+.page-template-right-sidebarpage .row #primary {
+  padding: 2em;
+  box-shadow: 0px 15px 30px -10px var(--global-palette4);
+}
+.page-template-right-sidebarpage .row #right-sidebar {
+  flex: 1 1 0;
+}
+
 :root {
   --global-palette-highlight: #1b41c7;
   --global-palette-highlight-alt: #1f3278;

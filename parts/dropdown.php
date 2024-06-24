@@ -13,7 +13,7 @@
     Categorias
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="http://localhost/cppmoderno/category/cpp/">C++</a>
-    <a class="dropdown-item" href="http://localhost/cppmoderno/category/leetcode/">Leetcode</a>
+    <a class="dropdown-item" href="https://cppmoderno.com/category/cpp/">C++</a>
+    <a class="dropdown-item" href="https://cppmoderno.com/category/leetcode/">Leetcode</a>
   </div>
 </div>

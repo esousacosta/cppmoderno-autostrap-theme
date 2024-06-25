@@ -15,6 +15,9 @@
 }
 
 #main-nav {
+    .site-description {
+        color: var(--global-palette-btn-bg-hover);
+    }
     .wp-block-search__input {
         background-color: transparent;
         border-color: black;

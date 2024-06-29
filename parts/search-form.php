@@ -7,7 +7,7 @@
 ?>
 
 
-<form role="search" method="get" action="http://localhost/cppmoderno/" class="wp-block-search__button-outside wp-block-search__icon-button wp-block-search">
+<form role="search" method="get" action="https://cppmoderno.com/" class="wp-block-search__button-outside wp-block-search__icon-button wp-block-search">
     <div class="wp-block-search__inside-wrapper ">
         <input class="wp-block-search__input form-control" id="wp-block-search__input-2" placeholder="" value="" type="search" name="s" required="">
         <button aria-label="Pesquisar" class="cppmoderno-search-button wp-block-search__button btn has-text-color has-theme-palette1-color has-icon wp-element-button" type="submit">

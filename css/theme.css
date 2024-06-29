@@ -15498,6 +15498,9 @@ code {
   line-height: 1.5;
   margin: 0.5em 0 0.5em;
 }
+#main .entry-content h3, #main .entry-content .h3 {
+  margin: 0.5em 0 0.5em;
+}
 #main .entry-content ul {
   text-align: justify;
 }
@@ -15876,6 +15879,9 @@ body.page-template-right-sidebarpage .wp-block-media-text__content {
   transition: all 0.25s ease-in-out;
 }
 
+#main-nav .site-description {
+  color: var(--global-palette-btn-bg-hover);
+}
 #main-nav .wp-block-search__input {
   background-color: transparent;
   border-color: black;
